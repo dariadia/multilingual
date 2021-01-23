@@ -148,7 +148,7 @@ a {
 }
 
 .book {
-  margin: 1em auto 2em;
+  margin: 1em auto 3em;
   width: min(30em, 90vw);
 }
 
@@ -157,9 +157,11 @@ a {
   margin: 0;
 }
 
-.book time {
+.book h6 {
   font-size: 0.8em;
   opacity: 0.5;
+  margin: 10px 0;
+  text-transform: capitalize;
 }
 
 .book p {
