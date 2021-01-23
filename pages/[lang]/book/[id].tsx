@@ -6,13 +6,14 @@ import { useTranslation } from "../../../intl/useTranslation";
 
 interface Props {
   locale: string;
-  booksData: {
+  bookData: {
     lang: string;
     title: string;
     slug: string;
     date: string;
     category: string;
     contentHtml: string;
+    series?: { name: string; book_number: number, episode_number: number }
   };
 }
 
