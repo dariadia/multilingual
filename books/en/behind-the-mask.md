@@ -9,7 +9,7 @@ series:
   name: Cardverse
   book_number: 2
   episode_number: 3
-description: "Book description goes here but it's a work in progress"
+description: "It’s time to unravel the puppeteer!"
 ---
 
 ## Read the free sample!

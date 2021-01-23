@@ -9,7 +9,7 @@ series:
   name: Cardverse
   book_number: 2
   episode_number: 2
-description: "Book description goes here but it's a work in progress"
+description: "You know the truth now, but it might the Black Castle in ruins."
 ---
 
 ## Read the free sample!
