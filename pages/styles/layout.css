@@ -15,7 +15,7 @@ body {
 
 main {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-template-rows: 3em auto 4em;
   grid-template-areas:
     "h h"
@@ -138,10 +138,6 @@ a {
   font-size: 5em;
   line-height: 1;
   margin: 0;
-}
-
-.page-text {
-  margin-left: 20px;
 }
 
 /* Books */
