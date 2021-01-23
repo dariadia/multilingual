@@ -10,7 +10,9 @@ series:
   book_number: 1
   episode_number: 2
 description: "Du und der Magier machen eine Rundreise! 🚀
+<br>
 Bereiten Sie sich auf eine Reise durch das Universum vor: Tassen, Zauberstäbe, Pentacles - Menschen mit genähten Mündern und Halbkatzen. Anscheinend ist Maze auch auf dem Rücken des Schwarzen Kaisers (beängstigend!), Um dich zu holen, und die Sonne hütet die Geheimnisse ihres Zwillings.
+<br>
 Ihre Karte ist der Schlüssel zu jeder Welt, aber können Sie sie richtig einsetzen und reicht das aus, um zu überleben?"
 ---
 

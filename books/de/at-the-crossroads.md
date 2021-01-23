@@ -10,9 +10,9 @@ series:
   book_number: 1
   episode_number: 1
 description: "Trieff den Hero - du ✨
-
+<br>
 Eines Tages bröckelt deine ganze Welt um dich herum. Der Himmel spaltet sich und jeder, den du kennst, verwandelt sich in Staub. Du entkommst zu den Tausenden von leuchtenden Portalen in jede erdenkliche Dimension. Nur du bist gefangen und Hunderte von anderen scheinen dich nicht zu interessieren. Dann erscheint ein Fremder und bietet Ihnen eine Karte an, einen Schlüssel für jede Welt. Der Preis ist hoch und dennoch nutzst du die Chance.
-
+<br>
 Dein Abenteuer beginnt an der Kreuzung."
 ---
 

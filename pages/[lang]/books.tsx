@@ -51,7 +51,7 @@ const Book: NextPage<Props> = ({ locale, allBooksData }) => {
             <h6>
               {book.series?.name}. {t("book")} {book.series?.book_number}. {t("episode")} {book.series?.episode_number}
             </h6>
-            {book.description && <p>{book.description}</p>}
+            {book.description && <p dangerouslySetInnerHTML={{ __html: book.description }} />}
           </article>
         ))}
 
