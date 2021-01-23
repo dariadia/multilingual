@@ -1,12 +1,17 @@
 {
-  "name": "next-intl",
-  "version": "0.1.0",
+  "name": "multilingual-proto",
+  "version": "0.1.1",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "export": "next build && next export",
-    "start": "next start"
+    "start": "next start -p $PORT",
+    "heroku-postbuild": "npm run build"
+  },
+  "engines": {
+    "yarn": "1.x",
+    "node": "14.x"
   },
   "dependencies": {
     "gray-matter": "^4.0.2",

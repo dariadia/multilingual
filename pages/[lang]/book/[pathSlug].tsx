@@ -5,8 +5,11 @@ import { Layout } from "../../../components";
 import { useTranslation } from "../../../intl/useTranslation";
 import { BookData } from "../books";
 
+interface Props {
+  bookData: BookData;
+}
 
-const Book: NextPage<BookData> = ({ bookData }) => {
+const Book: NextPage<Props> = ({ bookData }) => {
   const { t } = useTranslation();
   const { title, series, contentHtml } = bookData;
 
