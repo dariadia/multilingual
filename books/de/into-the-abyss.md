@@ -13,7 +13,7 @@ Bereiten Sie sich auf eine Reise durch das Universum vor: Tassen, Zauberstäbe, 
 Ihre Karte ist der Schlüssel zu jeder Welt, aber können Sie sie richtig einsetzen und reicht das aus, um zu überleben?"
 ---
 
-## Lies einen Kapitel!
+## Lies eine Kapitel!
 
 #### Intro. From the stranger’s last memories
 

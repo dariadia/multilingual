@@ -13,7 +13,7 @@ Prepare to travel across the universe: Cups, Wands, Pentacles - peoples with sti
 Your card is the key to any world, but can you wield it properly and will that be enough to survive? "
 ---
 
-## Read the free sample chanpters!
+## Read the free sample chapters!
 
 #### Intro. From the stranger’s last memories
 

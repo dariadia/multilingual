@@ -15,7 +15,7 @@ Eines Tages bröckelt deine ganze Welt um dich herum. Der Himmel spaltet sich un
 Dein Abenteuer beginnt an der Kreuzung."
 ---
 
-## Lies einen Kapitel!
+## Lies eine Kapitel!
 
 #### Intro
 

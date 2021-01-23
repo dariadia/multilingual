@@ -13,7 +13,7 @@ One day your whole world crumbles around you. Literally. The sky splits, and eve
 Your adventure begins at the Crossroads."
 ---
 
-## Read the free sample chanpters!
+## Read the free sample chapters!
 
 #### Intro
 
