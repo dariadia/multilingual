@@ -9,6 +9,10 @@
     "start": "next start -p $PORT",
     "heroku-postbuild": "npm run build"
   },
+  "engines": {
+    "yarn": "1.x",
+    "node": "14.x"
+  },
   "dependencies": {
     "gray-matter": "^4.0.2",
     "next": "9.5.5",
