@@ -3,10 +3,10 @@ import { useContext } from "react";
 import { LanguageContext, defaultLocale } from "./LanguageProvider";
 import { LangStrings } from "./Strings";
 
-export default function useTranslation() {
+export function useTranslation() {
   const [locale] = useContext(LanguageContext);
 
-  function t(key: string) {
+  const t = (key: string): string => {
     if (!LangStrings[locale][key]) {
       console.warn(`No string '${key}' for locale '${locale}'`);
     }

@@ -1,7 +1,7 @@
 ---
 lang: en
 title: "At the Crossroads"
-slug: book
+slug: young-adult-en
 date: "2021-01-01"
 category: books
 description: "Meet the main character - you ✨ 

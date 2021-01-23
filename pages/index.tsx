@@ -1,8 +1,8 @@
 import { NextPage } from "next";
 import Link from "next/link";
 
-import { Layout } from "../components/Layout";
-import useTranslation from "../intl/useTranslation";
+import { Layout } from "../components";
+import { useTranslation } from "../intl/useTranslation";
 
 const Home: NextPage = () => {
   const { t } = useTranslation();
