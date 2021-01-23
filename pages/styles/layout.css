@@ -18,9 +18,9 @@ main {
   grid-template-columns: 1fr;
   grid-template-rows: 3em auto 4em;
   grid-template-areas:
-    "h h"
-    "m m"
-    "f f";
+    "header"
+    "main"
+    "footer";
 }
 
 h1 {
@@ -44,7 +44,7 @@ a {
   align-items: center;
   border-bottom: 1px solid #eee;
   display: flex;
-  grid-area: h;
+  grid-area: header;
 }
 
 .logo {
@@ -110,7 +110,7 @@ a {
   background: #000 url(https://vanguardassets.bmstatic.com/assets/sharing/main.png?v4) no-repeat center fixed;
   color: #000;
   display: flex;
-  grid-area: m;
+  grid-area: main;
   height: calc(100vh - 7em);
   justify-content: center;
 }
@@ -142,8 +142,9 @@ a {
 
 /* Books */
 .books {
-  grid-area: m;
+  grid-area: main;
   margin-bottom: 3em;
+  height: calc(100vh - 3em);
 }
 
 .book {
@@ -168,7 +169,7 @@ a {
 /* book page */
 .book-content,
 .book-content {
-  grid-area: m;
+  grid-area: main;
 }
 
 .book-text,
@@ -199,7 +200,7 @@ a {
   display: flex;
   flex-direction: column;
   font-size: 0.8em;
-  grid-area: f;
+  grid-area: footer;
   justify-content: center;
   margin-top: 2em;
   text-align: center;
