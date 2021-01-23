@@ -26,13 +26,13 @@ export function getSortedBooksData() {
   const fileNames = getAllBooksFileNames(booksDirectory);
 
   const allBooksData = fileNames.map((fileName) => {
-    const id = fileName.split("/")[1].replace(/\.md$/, "");
+    const pathSlug = fileName.split("/")[1].replace(/\.md$/, "");
     const fullPath = path.join(booksDirectory, fileName);
     const fileContents = fs.readFileSync(fullPath, "utf-8");
     const frontMatter: GrayMatterFile<string> = matter(fileContents);
 
     return {
-      id,
+      pathSlug,
       ...(frontMatter.data as {
         lang: string;
         date: string;
@@ -50,20 +50,20 @@ export function getSortedBooksData() {
   });
 }
 
-// Get IDs for books
-export function getAllBooksIds() {
+// Get paths for books
+export function getAllBooksPaths() {
   const fileNames = getAllBooksFileNames(booksDirectory);
 
   return fileNames.map((fileName) => ({
     params: {
-      id: fileName.split("/")[1].replace(/\.md$/, ""),
+      pathSlug: fileName.split("/")[1].replace(/\.md$/, ""),
       lang: fileName.split("/")[0],
     },
   }));
 }
 
-export async function getBooksData(id) {
-  const fullPath = path.join(booksDirectory, `${id}.md`);
+export async function getBooksData(pathSlug) {
+  const fullPath = path.join(booksDirectory, `${pathSlug}.md`);
   const fileContents = fs.readFileSync(fullPath, "utf-8");
   const frontMatter = matter(fileContents);
 
@@ -74,7 +74,7 @@ export async function getBooksData(id) {
   const contentHtml = processedContent.toString();
 
   return {
-    id,
+    pathSlug,
     ...(frontMatter.data as { date: string; title: string }),
     contentHtml,
   };

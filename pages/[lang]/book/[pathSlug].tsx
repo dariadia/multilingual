@@ -1,6 +1,6 @@
 import { GetStaticProps, GetStaticPaths, NextPage } from "next";
 
-import { getAllBooksIds, getBooksData } from "../../../lib/books";
+import { getAllBooksPaths, getBooksData } from "../../../lib/books";
 import { Layout } from "../../../components";
 import { useTranslation } from "../../../intl/useTranslation";
 import { BookData } from "../books";
@@ -26,7 +26,7 @@ const Book: NextPage<BookData> = ({ bookData }) => {
 };
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
-  const bookData = await getBooksData(`/${params.lang}/${params.id}`);
+  const bookData = await getBooksData(`/${params.lang}/${params.pathSlug}`);
 
   return {
     props: {
@@ -37,7 +37,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 };
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const paths = await getAllBooksIds();
+  const paths = await getAllBooksPaths();
 
   return {
     paths,

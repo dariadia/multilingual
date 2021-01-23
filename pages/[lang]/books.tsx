@@ -8,7 +8,7 @@ import { useTranslation } from "../../intl/useTranslation";
 
 export interface BookData {
   uuid: string;
-  id: string;
+  pathSlug: string;
   description: string;
   lang: string;
   title: string;
@@ -42,8 +42,8 @@ const Book: NextPage<Props> = ({ locale, allBooksData }) => {
       <section className="page-content">
         <h1>{t("books")}</h1>
         {pagedBooks.map((book) => (
-          <article key={book.id} className="book">
-            <Link href={`/[lang]/book/[id]`} as={`/${locale}/book/${book.id}`}>
+          <article key={book.uuid} className="book">
+            <Link href={`/[lang]/book/[pathSlug]`} as={`/${locale}/book/${book.pathSlug}`}>
               <a>
                 <h3>{book.title}</h3>
               </a>
