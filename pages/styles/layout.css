@@ -111,7 +111,7 @@ a {
   color: #000;
   display: flex;
   grid-area: main;
-  height: calc(100vh - 7em);
+  min-height: calc(100vh - 7em);
   justify-content: center;
 }
 
@@ -144,7 +144,7 @@ a {
 .books {
   grid-area: main;
   margin-bottom: 3em;
-  height: calc(100vh - 3em);
+  min-height: calc(100vh - 3em);
 }
 
 .book {
@@ -167,12 +167,11 @@ a {
 }
 
 /* book page */
-.book-content,
 .book-content {
   grid-area: main;
+  min-height: calc(100vh - 3em);
 }
 
-.book-text,
 .book-text {
   margin: 1em auto 2em;
   width: min(30em, 90vw);
@@ -191,6 +190,14 @@ a {
   display: inline-block;
   padding: 0.5em;
   font-size: 1em;
+}
+
+/* About */
+.about .page-content {
+  grid-area: main;
+  min-height: calc(100vh - 10em);
+  max-width: 80vw;
+  margin: auto;
 }
 
 /* Footer */
