@@ -2,7 +2,7 @@ import { useState } from "react";
 import { NextPage, GetStaticProps, GetStaticPaths } from "next";
 import Link from "next/link";
 
-import { Layout } from "../../components/Layout";
+import { Layout } from "../../components";
 import { getSortedBooksData } from "../../lib/books";
 import { useTranslation } from "../../intl/useTranslation";
 

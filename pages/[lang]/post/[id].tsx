@@ -1,7 +1,7 @@
 import { GetStaticProps, GetStaticPaths, NextPage } from "next";
 
 import { getAllBooksIds, getBooksData } from "../../../lib/books";
-import { Layout } from "../../../components/Layout";
+import { Layout } from "../../../components";
 
 interface Props {
   locale: string;
