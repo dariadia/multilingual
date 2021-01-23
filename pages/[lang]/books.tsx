@@ -78,7 +78,7 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
 
   return {
     props: {
-      locale: ctx.params?.lang || "de",
+      locale: ctx.params?.lang || "en",
       allBooksData,
     },
   };
