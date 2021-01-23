@@ -4,14 +4,16 @@ title: "At the Crossroads"
 slug: young-adult-en
 date: "2021-01-01"
 category: books
+series: 
+  name: Cardverse
+  book_number: 1
+  episode_number: 1
 description: "Meet the main character - you ✨ 
 One day your whole world crumbles around you. Literally. The sky splits, and everyone you know turns into dust. You escape to the thousands of glowing portals to any dimension imaginable. Only you are trapped, and hundreds of other you-s don't seem to care. That's when a stranger appears and offers you a card, a key to any world. The price is high, and yet you take the chance. 
 Your adventure begins at the Crossroads."
 ---
 
-## Free sample
-
-### Episode 1. At the Crossroads
+## Read the free sample chanpters!
 
 #### Intro
 

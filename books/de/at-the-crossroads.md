@@ -4,14 +4,18 @@ title: "At the Crossroads"
 slug: young-adult-de
 date: "2021-01-01"
 category: books
+series: 
+  name: Cardverse
+  book_number: 1
+  episode_number: 1
 description: "Trieff den Hero - du ✨
+
 Eines Tages bröckelt deine ganze Welt um dich herum. Der Himmel spaltet sich und jeder, den du kennst, verwandelt sich in Staub. Du entkommst zu den Tausenden von leuchtenden Portalen in jede erdenkliche Dimension. Nur du bist gefangen und Hunderte von anderen scheinen dich nicht zu interessieren. Dann erscheint ein Fremder und bietet Ihnen eine Karte an, einen Schlüssel für jede Welt. Der Preis ist hoch und dennoch nutzst du die Chance.
-Dein Abenteuer beginnt an der Kreuzung. "
+
+Dein Abenteuer beginnt an der Kreuzung."
 ---
 
 ## Lies einen Kapitel!
-
-### Episode 1. At the Crossroads
 
 #### Intro
 
@@ -65,7 +69,7 @@ And with that, he… disappears. Thunder roars in your ears, the last of the gro
 And jump. The last pieces of your world soar into nothingness behind your back.
 
 
-Chapter 1
+### Chapter 1
 
 Ugh. Your head hurts. 
 
