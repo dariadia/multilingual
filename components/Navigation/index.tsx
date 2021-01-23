@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 
-import useTranslation from "../../intl/useTranslation";
+import { useTranslation } from "../../intl/useTranslation";
 
 interface Props {
   className?: string;

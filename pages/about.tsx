@@ -1,7 +1,7 @@
 import { NextPage } from "next";
 
 import { Layout } from "../components/Layout";
-import useTranslation from "../intl/useTranslation";
+import { useTranslation } from "../intl/useTranslation";
 
 const About: NextPage = () => {
   const { t } = useTranslation();

@@ -4,7 +4,7 @@ import Link from "next/link";
 
 import { Layout } from "../../components/Layout";
 import { getSortedBooksData } from "../../lib/books";
-import useTranslation from "../../intl/useTranslation";
+import { useTranslation } from "../../intl/useTranslation";
 
 interface Props {
   locale: string;
