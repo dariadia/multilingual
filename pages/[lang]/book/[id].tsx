@@ -2,6 +2,7 @@ import { GetStaticProps, GetStaticPaths, NextPage } from "next";
 
 import { getAllBooksIds, getBooksData } from "../../../lib/books";
 import { Layout } from "../../../components";
+import { useTranslation } from "../../../intl/useTranslation";
 
 interface Props {
   locale: string;
@@ -16,11 +17,14 @@ interface Props {
 }
 
 const Book: NextPage<Props> = ({ bookData, locale }) => {
-  const { title, contentHtml } = bookData;
+  const { t } = useTranslation();
+  const { title, series, contentHtml } = bookData;
 
   return (
     <Layout title={title}>
       <article className="book-content">
+        <h3>{series?.name}. {t("book")} {series?.book_number}</h3>
+        <h3>{t("episode")} {series?.episode_number}</h3>
         <h1>{title}</h1>
         <div
           className="book-text"

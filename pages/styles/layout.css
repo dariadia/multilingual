@@ -172,6 +172,11 @@ a {
   min-height: calc(100vh - 3em);
 }
 
+.book-content h3 {
+  text-align: center;
+  text-transform: capitalize;
+}
+
 .book-text {
   margin: 1em auto 2em;
   width: min(30em, 90vw);
