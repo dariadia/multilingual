@@ -6,15 +6,22 @@ import { Layout } from "../../components";
 import { getSortedBooksData } from "../../lib/books";
 import { useTranslation } from "../../intl/useTranslation";
 
+export interface BookData {
+  uuid: string;
+  pathSlug: string;
+  description: string;
+  lang: string;
+  title: string;
+  slug: string;
+  date: string;
+  category: string;
+  contentHtml: string;
+  series?: { name: string; book_number: number, episode_number: number }
+};
+
 interface Props {
   locale: string;
-  allBooksData: {
-    date: string;
-    title: string;
-    lang: string;
-    description: string;
-    id: any;
-  }[];
+  allBooksData: BookData[];
 }
 
 const Book: NextPage<Props> = ({ locale, allBooksData }) => {
@@ -22,36 +29,29 @@ const Book: NextPage<Props> = ({ locale, allBooksData }) => {
   const booksData = allBooksData.filter((book) => book.lang === locale);
 
   // Pagination
-  const booksPerPage = 10;
-  const numPages = Math.ceil(booksData.length / booksPerPage);
+  const BOOKS_PER_PAGE = 10;
+  const numPages = Math.ceil(booksData.length / BOOKS_PER_PAGE);
   const [currentPage, setCurrentPage] = useState(1);
   const pagedBooks = booksData.slice(
-    (currentPage - 1) * booksPerPage,
-    currentPage * booksPerPage
+    (currentPage - 1) * BOOKS_PER_PAGE,
+    currentPage * BOOKS_PER_PAGE
   );
-
-  // Date localization options
-  const dateOptions = {
-    year: "numeric",
-    month: "long",
-    day: "numeric",
-  };
 
   return (
     <Layout className="books" title={t("books")}>
       <section className="page-content">
         <h1>{t("books")}</h1>
         {pagedBooks.map((book) => (
-          <article key={book.id} className="book">
-            <Link href={`/[lang]/book/[id]`} as={`/${locale}/book/${book.id}`}>
+          <article key={book.uuid} className="book">
+            <Link href={`/[lang]/book/[pathSlug]`} as={`/${locale}/book/${book.pathSlug}`}>
               <a>
                 <h3>{book.title}</h3>
               </a>
             </Link>
-            <time>
-              {new Date(book.date).toLocaleDateString(locale, dateOptions)}
-            </time>
-            {book.description && <p>{book.description}</p>}
+            <h6>
+              {book.series?.name}. {t("book")} {book.series?.book_number}. {t("episode")} {book.series?.episode_number}
+            </h6>
+            {book.description && <p dangerouslySetInnerHTML={{ __html: book.description }} />}
           </article>
         ))}
 
@@ -78,7 +78,7 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
 
   return {
     props: {
-      locale: ctx.params?.lang || "de",
+      locale: ctx.params?.lang || "en",
       allBooksData,
     },
   };
