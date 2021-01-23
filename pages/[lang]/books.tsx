@@ -29,7 +29,7 @@ const Book: NextPage<Props> = ({ locale, allBooksData }) => {
   const booksData = allBooksData.filter((book) => book.lang === locale);
 
   // Pagination
-  const BOOKS_PER_PAGE = 10;
+  const BOOKS_PER_PAGE = 4;
   const numPages = Math.ceil(booksData.length / BOOKS_PER_PAGE);
   const [currentPage, setCurrentPage] = useState(1);
   const pagedBooks = booksData.slice(
