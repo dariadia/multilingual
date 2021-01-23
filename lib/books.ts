@@ -41,8 +41,8 @@ export function getSortedBooksData() {
     };
   });
 
-  return allBooksData.sort((a, b) => {
-    if (a.date < b.date) {
+  return allBooksData.sort((min, max) => {
+    if (min.date > max.date) {
       return 1;
     } else {
       return -1;
