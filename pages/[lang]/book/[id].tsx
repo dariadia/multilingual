@@ -15,8 +15,8 @@ interface Props {
   };
 }
 
-const Book: NextPage<Props> = ({ booksData, locale }) => {
-  const { title, contentHtml } = booksData;
+const Book: NextPage<Props> = ({ bookData, locale }) => {
+  const { title, contentHtml } = bookData;
 
   return (
     <Layout title={title}>
