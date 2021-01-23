@@ -18,7 +18,7 @@ Fühlen Sie sich wie zu Hause, denn der Schwarze Kaiser lässt Sie sowieso nicht
 Schnall dich an, es ist Zeit, dich all deinen schlimmsten Ängsten zu stellen!"
 ---
 
-## Read the free sample chapters!
+## Lies eine Kapitel!
 
 #### Intro
 
