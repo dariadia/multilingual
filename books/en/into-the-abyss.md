@@ -11,7 +11,9 @@ series:
   episode_number: 2
 description: "You and the Mage set out on a field trip! 🚀 
 <br>
+<br>
 Prepare to travel across the universe: Cups, Wands, Pentacles - peoples with stitched mouths and half-felines. Also, apparently, the Black Emperor's back (scary!), Maze is out there to get you, and the Sun guards her twin's secrets. 
+<br>
 <br>
 Your card is the key to any world, but can you wield it properly and will that be enough to survive? "
 ---
