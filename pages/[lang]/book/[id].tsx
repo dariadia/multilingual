@@ -3,21 +3,10 @@ import { GetStaticProps, GetStaticPaths, NextPage } from "next";
 import { getAllBooksIds, getBooksData } from "../../../lib/books";
 import { Layout } from "../../../components";
 import { useTranslation } from "../../../intl/useTranslation";
+import { BookData } from "../books";
 
-interface Props {
-  locale: string;
-  bookData: {
-    lang: string;
-    title: string;
-    slug: string;
-    date: string;
-    category: string;
-    contentHtml: string;
-    series?: { name: string; book_number: number, episode_number: number }
-  };
-}
 
-const Book: NextPage<Props> = ({ bookData, locale }) => {
+const Book: NextPage<BookData> = ({ bookData }) => {
   const { t } = useTranslation();
   const { title, series, contentHtml } = bookData;
 

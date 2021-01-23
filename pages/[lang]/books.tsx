@@ -6,15 +6,22 @@ import { Layout } from "../../components";
 import { getSortedBooksData } from "../../lib/books";
 import { useTranslation } from "../../intl/useTranslation";
 
+export interface BookData {
+  uuid: string;
+  id: string;
+  description: string;
+  lang: string;
+  title: string;
+  slug: string;
+  date: string;
+  category: string;
+  contentHtml: string;
+  series?: { name: string; book_number: number, episode_number: number }
+};
+
 interface Props {
   locale: string;
-  allBooksData: {
-    date: string;
-    title: string;
-    lang: string;
-    description: string;
-    id: any;
-  }[];
+  allBooksData: BookData[];
 }
 
 const Book: NextPage<Props> = ({ locale, allBooksData }) => {
@@ -30,13 +37,6 @@ const Book: NextPage<Props> = ({ locale, allBooksData }) => {
     currentPage * booksPerPage
   );
 
-  // Date localization options
-  const dateOptions = {
-    year: "numeric",
-    month: "long",
-    day: "numeric",
-  };
-
   return (
     <Layout className="books" title={t("books")}>
       <section className="page-content">
@@ -48,9 +48,9 @@ const Book: NextPage<Props> = ({ locale, allBooksData }) => {
                 <h3>{book.title}</h3>
               </a>
             </Link>
-            <time>
-              {new Date(book.date).toLocaleDateString(locale, dateOptions)}
-            </time>
+            <h6>
+              {book.series?.name}. {t("book")} {book.series?.book_number}. {t("episode")} {book.series?.episode_number}
+            </h6>
             {book.description && <p>{book.description}</p>}
           </article>
         ))}
